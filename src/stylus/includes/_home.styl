@@ -1,0 +1,56 @@
+.content-main--home
+  text-align  center
+
+.clip-svg
+  //clip-path   url('#agp-logo')
+  mask        url('files/logo-980.svg')
+  //width       1200px
+  //height      650px
+  width       980px
+  height      450px
+  object-fit  cover
+  
+  +below(980px)
+    mask        url('files/logo-800.svg')
+    width       800px
+    height      350px
+    
+  +below(800px)
+    mask        url('files/logo-600.svg')
+    width       600px
+    height      295px
+    
+  +below(600px)
+    mask        url('files/logo-450.svg')
+    width       450px
+    height      550px
+    
+  +below(440px)
+    mask        url('files/logo-320.svg')
+    width       320px
+    height      400px
+    
+.home-intro
+  padding       3rem 12% 5rem
+  +below(1024px)
+    padding     3rem 8%
+  +below(980px)
+    padding     3rem 6%
+  +below(800px)
+    padding     .4rem 10% 1rem
+.home-intro__content
+  font-size     3rem
+  line-height   1.4
+  font-weight   300
+  font-style    italic
+  blockquote
+    padding     0
+    margin      0
+    font-size   3rem
+    line-height 1.5
+    +below(980px)
+      font-size 2.5rem
+    +below(800px)
+      font-size 2rem
+    +below(600px)
+      font-size 1.6rem
