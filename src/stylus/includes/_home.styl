@@ -31,7 +31,7 @@
     height      400px
     
 .home-intro
-  padding       3rem 12% 5rem
+  padding       2rem 12% 5rem
   margin-bottom 2em
   +below(1024px)
     padding     3rem 8%
@@ -41,20 +41,23 @@
     padding     .4rem 10% 1rem
 .home-intro__content
   font-size     3rem
-  line-height   1.4
   font-weight   300
   font-style    italic
   blockquote
     padding     0
     margin      0
-    font-size   2.3rem
-    line-height 1.5
+    font-size   2.1rem
+    line-height 1.6
+    font-family 'Roboto Slab', serif
+    font-weight 100
+    letter-spacing 0
+    font-style   normal
     +below(980px)
-      font-size 2.2rem
+      font-size 1.8rem
     +below(800px)
-      font-size 2rem
+      font-size 1.7rem
     +below(600px)
-      font-size 1.6rem
+      font-size 1.5rem
       
 .article-home
   &__heading
@@ -66,14 +69,27 @@
     line-height     1.62
     max-width       80%
     margin          0 auto
+    +below(800px)
+      max-width     none
+      padding       0 1em 1em
   &__title
     font-size       1.8em
     margin-top      0
     line-height     1.2
     padding         4em 2em
+    //font-family     'Roboto Slab', serif
+    font-weight     200
     text-align      center
     background-size cover !important
-    p
-      font-size     1.1em
-      margin-bottom 1.62em
+    text-shadow     0 1px 1px rgba(255,255,255,0.7)
+  h3
+    line-height     1.6
+    +below(800px)
+      line-height   1.3
+  p
+    font-size     1.1em
+    margin-bottom 1.42em
+    +below(800px)
+      font-size   .8em
+      margin-bottom 1.1em
   

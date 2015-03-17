@@ -370,8 +370,8 @@ figure {
   }
 }
 .home-intro {
-  padding: 48px 12% 80px;
-  padding: 3rem 12% 5rem;
+  padding: 32px 12% 80px;
+  padding: 2rem 12% 5rem;
   margin-bottom: 2em;
 }
 @media only screen and (max-width: 1024px) {
@@ -395,33 +395,36 @@ figure {
 .home-intro__content {
   font-size: 48px;
   font-size: 3rem;
-  line-height: 1.4;
   font-weight: 300;
   font-style: italic;
 }
 .home-intro__content blockquote {
   padding: 0;
   margin: 0;
-  font-size: 36px;
-  font-size: 2.3rem;
-  line-height: 1.5;
+  font-size: 33px;
+  font-size: 2.1rem;
+  line-height: 1.6;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 100;
+  letter-spacing: 0;
+  font-style: normal;
 }
 @media only screen and (max-width: 980px) {
   .home-intro__content blockquote {
-    font-size: 35px;
-    font-size: 2.2rem;
+    font-size: 28px;
+    font-size: 1.8rem;
   }
 }
 @media only screen and (max-width: 800px) {
   .home-intro__content blockquote {
-    font-size: 32px;
-    font-size: 2rem;
+    font-size: 27px;
+    font-size: 1.7rem;
   }
 }
 @media only screen and (max-width: 600px) {
   .home-intro__content blockquote {
-    font-size: 25px;
-    font-size: 1.6rem;
+    font-size: 24px;
+    font-size: 1.5rem;
   }
 }
 .article-home__heading {
@@ -435,17 +438,39 @@ figure {
   max-width: 80%;
   margin: 0 auto;
 }
+@media only screen and (max-width: 800px) {
+  .article-home__content {
+    max-width: none;
+    padding: 0 1em 1em;
+  }
+}
 .article-home__title {
   font-size: 1.8em;
   margin-top: 0;
   line-height: 1.2;
   padding: 4em 2em;
+  font-weight: 200;
   text-align: center;
   background-size: cover !important;
+  text-shadow: 0 1px 1px rgba(255,255,255,0.7);
 }
-.article-home__title p {
+.article-home h3 {
+  line-height: 1.6;
+}
+@media only screen and (max-width: 800px) {
+  .article-home h3 {
+    line-height: 1.3;
+  }
+}
+.article-home p {
   font-size: 1.1em;
-  margin-bottom: 1.62em;
+  margin-bottom: 1.42em;
+}
+@media only screen and (max-width: 800px) {
+  .article-home p {
+    font-size: 0.8em;
+    margin-bottom: 1.1em;
+  }
 }
 .article-home {
   text-align: left;
