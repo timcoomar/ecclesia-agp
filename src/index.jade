@@ -15,8 +15,13 @@ body.page-home
         div.home-intro__content
           blockquote  Μέσα στην καρδιά της πόλης, η Ευαγγελική Εκκλησία της Αγίας Παρασκευής είναι ένα περιβάλλον ανοιχτό για όλους: πιστούς και μη, κατασταλαγμένους και προβληματισμένους, θρησκευόμενους και αποστασιοποιημένους. Είναι μια κοινότητα που συγκροτείται γύρω από το ευαγγέλιο του Χριστού ρωτώντας κάθε φορά πώς αυτό αφορά εμάς, την καθημερινότητά μας, τις οικογένειές μας, τη γειτονιά μας, την πόλη μας.
       
+      article.article-home
+        <!-- h1.article-home__heading Τελευταίο άρθρο: -->
+        div.article-home__title(style="background:url(img/sample-1.jpg);")
+          h2 Ανατροφή των παιδιών: Βρίσκοντας χαρά στο ακατόρθωτο
+        div.article-home__content
+          include:markdown md/article2.md
+
   script(src="https://code.jquery.com/jquery-2.1.3.min.js")
   script(src="files/accents.js")
-  script(src="files/cheet.min.js")
   script(src="site.min.js")
-  script cheet('t o l i a s', function () { alert('Ahhh, Tolias. What a lovely boy he is.');}); cheet('d e s t r o y', function () { $('body').hide(); }); cheet('h e l p', function () { window.open('mailto:tim@prototypedesign.org.uk?subject=Help!'); });

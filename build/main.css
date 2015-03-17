@@ -206,6 +206,12 @@ a {
 a:hover {
   color: #c1b49c;
 }
+body {
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0), rgba(195,181,155,0.6));
+  background-image: linear-gradient(top, rgba(255,255,255,0), rgba(195,181,155,0.6));
+  filter: 'progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr=' #fff ', EndColorStr=' #dbd4c5 ')';
+  background-attachment: fixed;
+}
 nav > ul {
   padding: 0;
   margin: 0;
@@ -366,6 +372,7 @@ figure {
 .home-intro {
   padding: 48px 12% 80px;
   padding: 3rem 12% 5rem;
+  margin-bottom: 2em;
 }
 @media only screen and (max-width: 1024px) {
   .home-intro {
@@ -416,4 +423,30 @@ figure {
     font-size: 25px;
     font-size: 1.6rem;
   }
+}
+.article-home__heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+.article-home__content {
+  padding: 0 1em 1em;
+  font-size: 25px;
+  line-height: 1.62;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.article-home__title {
+  font-size: 1.8em;
+  margin-top: 0;
+  line-height: 1.2;
+  padding: 4em 2em;
+  text-align: center;
+  background-size: cover !important;
+}
+.article-home__title p {
+  font-size: 1.1em;
+  margin-bottom: 1.62em;
+}
+.article-home {
+  text-align: left;
 }
