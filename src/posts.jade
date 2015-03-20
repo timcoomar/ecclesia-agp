@@ -1,0 +1,27 @@
+include ./jade/header.jade
+
+body.page-posts
+
+  div.site-width
+
+    include ./jade/head.jade
+
+    main.content-main
+      
+      article.article-preview(style="background:url('img/sample-1.jpg') no-repeat;")
+        h1.article-preview__title 
+          a(href="joy-impossible.html") Ανατροφή των παιδιών: Βρίσκοντας χαρά στο ακατόρθωτο
+      article.article-preview(style="background:url('img/post-1.jpg') no-repeat;")
+        h1.article-preview__title 
+          a(href="7-things.html") 7 πράγματα που λέει ένας καλός πατέρας
+      article.article-preview(style="background:url('img/post-2.jpg') no-repeat;")
+        h1.article-preview__title 
+          a(href="difficult-explanations.html") Εξηγώντας δύσκολες έννοιες στα παιδιά μας
+      article.article-preview(style="background:url('img/post-3.jpg') no-repeat;")
+        h1.article-preview__title 
+          a(href="perfect-mother.html") Η Τέλεια Μητέρα
+      article.article-preview(style="background:url('img/post-4.jpg') no-repeat;")
+        h1.article-preview__title 
+          a(href="6-things-exams.html") 6 πράγματα που οφείλουν να γνωρίζουν οι γονείς την περίοδο των εξετάσεων
+
+  include ./jade/footer.jade

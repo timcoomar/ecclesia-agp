@@ -1,0 +1,48 @@
+.page-posts .content-main
+  overflow      hidden
+  margin-top    1em
+
+.article-preview
+  float         left
+  width         33.3333333%
+  text-align    center
+  background-size cover !important
+  height        250px
+  height        20vw
+  position      relative
+  &:hover
+    cursor      pointer
+    a 
+      color     black
+    &::before
+      background none
+  +below(980px)
+    width       50%
+    height      300px
+    height      32vw
+  +below(800px)
+    width       96%
+    margin      0 auto
+    display     block
+    float       none
+    margin-bottom 1em
+  &::before
+    position    absolute
+    content     " "
+    background  rgba(255,255,255,0.2)
+    transition  .3s background-color
+    top         0
+    left        0
+    bottom      0
+    right       0
+  &__title
+    position    absolute
+    margin      auto
+    top         50%
+    transform   translateY(-50%)
+    padding     0 1em
+    text-align  center
+    width       100%
+    text-shadow 0 1px 0 rgba(255,255,255,.5)
+    +below(800px)
+      font-size 1.4em

@@ -1,0 +1,24 @@
+include ./jade/header.jade
+
+body.page-page.page-contact
+
+  script(src="http://maps.googleapis.com/maps/api/js")
+  script(src="files/map.js")
+
+  div.site-width
+
+    include ./jade/head.jade
+
+    main.content-main
+
+      article.article-page
+
+        h1.article-page__title(style="background:url('img/contact.jpg') no-repeat;") Επικοινωνία
+
+        div.article-page__content
+
+          include:markdown ./md/contact.md
+
+          div(id="googleMap" style="width:100%;height:380px;")
+
+  include ./jade/footer.jade

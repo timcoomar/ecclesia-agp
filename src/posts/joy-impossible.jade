@@ -1,0 +1,19 @@
+include ../jade/header.jade
+
+body.page-post
+
+  div.site-width
+
+    include ../jade/head.jade
+
+    main.content-main
+
+      article.article-post
+
+        h1.article-post__title(style="background:url('img/sample-1.jpg') no-repeat;") Ανατροφή των παιδιών: Βρίσκοντας χαρά στο ακατόρθωτο
+
+        div.article-post__content
+
+          include:markdown ../md/joy-impossible.md
+
+  include ../jade/footer.jade

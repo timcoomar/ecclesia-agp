@@ -327,6 +327,13 @@ figure {
     font-size: 1.4rem;
   }
 }
+.page-church .menu-home li:nth-child(2) a,
+.page-posts .menu-home li:nth-child(3) a,
+.page-post .menu-home li:nth-child(3) a,
+.page-sermons .menu-home li:nth-child(4) a,
+.page-contact .menu-home li:nth-child(5) a {
+  color: #c3b59b;
+}
 .content-main--home {
   text-align: center;
 }
@@ -435,8 +442,14 @@ figure {
   padding: 0 1em 1em;
   font-size: 25px;
   line-height: 1.62;
-  max-width: 80%;
+  max-width: 70%;
   margin: 0 auto;
+  text-align: left;
+}
+@media only screen and (max-width: 980px) {
+  .article-home__content {
+    max-width: 80%;
+  }
 }
 @media only screen and (max-width: 800px) {
   .article-home__content {
@@ -472,6 +485,149 @@ figure {
     margin-bottom: 1.1em;
   }
 }
-.article-home {
-  text-align: left;
+.article-post__title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  line-height: 1.2;
+  padding: 6em 2em;
+  background-size: cover !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+@media only screen and (max-width: 800px) {
+  .article-post__title {
+    padding: 4em 1em;
+    margin-top: 0.5em;
+  }
+}
+.article-post__content {
+  max-width: 70%;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.62;
+}
+@media only screen and (max-width: 980px) {
+  .article-post__content {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .article-post__content {
+    max-width: none;
+    padding: 0 1em 1em;
+  }
+}
+.article-post__content p {
+  font-size: 1.1em;
+}
+.article-page__title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0;
+  line-height: 1.2;
+  padding: 6em 2em;
+  background-size: cover !important;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+@media only screen and (max-width: 800px) {
+  .article-page__title {
+    padding: 4em 1em;
+    margin-top: 0.5em;
+  }
+}
+.article-page__content {
+  max-width: 70%;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.62;
+}
+@media only screen and (max-width: 980px) {
+  .article-page__content {
+    max-width: 80%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .article-page__content {
+    max-width: none;
+    padding: 0 1em 1em;
+  }
+}
+.article-page__content p {
+  font-size: 1.1em;
+}
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.page-sermons .article-preview {
+  box-shadow: inset 0px 0px 0px 1px #c3b59b;
+}
+.page-sermons .article-page__title {
+  margin-bottom: 0;
+}
+.page-posts .content-main {
+  overflow: hidden;
+  margin-top: 1em;
+}
+.article-preview {
+  float: left;
+  width: 33.3333333%;
+  text-align: center;
+  background-size: cover !important;
+  height: 250px;
+  height: 20vw;
+  position: relative;
+}
+.article-preview:hover {
+  cursor: pointer;
+}
+.article-preview:hover a {
+  color: #000;
+}
+.article-preview:hover::before {
+  background: none;
+}
+@media only screen and (max-width: 980px) {
+  .article-preview {
+    width: 50%;
+    height: 300px;
+    height: 32vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .article-preview {
+    width: 96%;
+    margin: 0 auto;
+    display: block;
+    float: none;
+    margin-bottom: 1em;
+  }
+}
+.article-preview::before {
+  position: absolute;
+  content: " ";
+  background: rgba(255,255,255,0.2);
+  -webkit-transition: 0.3s background-color;
+          transition: 0.3s background-color;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.article-preview__title {
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  padding: 0 1em;
+  text-align: center;
+  width: 100%;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+@media only screen and (max-width: 800px) {
+  .article-preview__title {
+    font-size: 1.4em;
+  }
 }

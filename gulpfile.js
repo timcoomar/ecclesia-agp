@@ -55,6 +55,16 @@ gulp.task('templates', function(){
     .pipe(livereload());
 });
 
+// Jade Task
+gulp.task('posts', function(){
+  var YOUR_LOCALS = {};
+
+  return gulp.src('src/posts/*.jade')
+    .pipe(jade({locals: YOUR_LOCALS, pretty: true }))
+    .pipe(gulp.dest('build/'))
+    .pipe(livereload());
+});
+
 // Image Task
 // Compresses images
 gulp.task('images', function(){
@@ -77,11 +87,12 @@ gulp.task('watch', function(){
   gulp.watch('src/js/vendors/*.js', ['vendors']);
   gulp.watch('src/stylus/**/*.styl', ['styles']);
   gulp.watch('src/*.jade', ['templates']);
+  gulp.watch('src/posts/*.jade', ['posts']);
   gulp.watch('src/img/*', ['images']);
 });
 
 
-gulp.task('default', ['vendors', 'scripts', 'styles', 'templates', 'images', 'move', 'watch']);
+gulp.task('default', ['vendors', 'scripts', 'styles', 'templates', 'posts', 'images', 'move', 'watch']);
 
 
 // FTP Task

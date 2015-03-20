@@ -1,0 +1,25 @@
+include ./jade/header.jade
+
+body.page-page.page-church
+
+  div.site-width
+
+    include ./jade/head.jade
+
+    main.content-main
+
+      article.article-page
+
+        h1.article-page__title(style="background:url('img/church.jpg') no-repeat;") Εκκλησία
+
+        div.article-page__content
+
+          include:markdown ./md/church.md
+          
+          <hr>
+
+          h2.section-title Συχνές ερωτήσεις
+
+          include:markdown ./md/faqs.md
+
+  include ./jade/footer.jade

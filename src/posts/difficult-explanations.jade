@@ -1,0 +1,19 @@
+include ../jade/header.jade
+
+body.page-post
+
+  div.site-width
+
+    include ../jade/head.jade
+
+    main.content-main
+
+      article.article-post
+
+        h1.article-post__title(style="background:url('img/post-2.jpg') no-repeat;") Εξηγώντας δύσκολες έννοιες στα παιδιά μας
+
+        div.article-post__content
+
+          include:markdown ../md/difficult-explanations.md
+
+  include ../jade/footer.jade
